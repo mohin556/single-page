@@ -26,7 +26,7 @@ const Navbars = () => {
               <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/">Home</Nav.Link>
               <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/contact">Contact Us</Nav.Link>
               <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/product">Product</Nav.Link>
-              <NavDropdown className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  title="Services" id="navbarScrollingDropdown">
+              {/* <NavDropdown className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  title="Services" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3"> Tracking </NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
                  Power System
@@ -35,7 +35,7 @@ const Navbars = () => {
                 <NavDropdown.Item href="#action5">
                   About Us
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
               
             </Nav>
             <Form className="d-flex">
