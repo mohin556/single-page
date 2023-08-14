@@ -1,0 +1,17 @@
+.header-container{
+    height: 100vh;
+    
+}
+
+.home-center{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.header {
+    background-color: lightgray;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
