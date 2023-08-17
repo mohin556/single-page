@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Product from './components/Product/Product';
+import Login from './components/Login/Login';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/product" component={Product} />
     
         <Route path="/contact" component={Contact} />
+        <Route path="/login" component={Login} />
       </Switch>
     </Router>
   
