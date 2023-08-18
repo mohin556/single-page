@@ -3,7 +3,7 @@ import './Product.css';
 import Navbars from '../Navbar/Navbar';
 import Button from 'react-bootstrap/Button';
 import ReactForm from '../ReactForm/ReactForm';
-
+import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
 
 
@@ -14,16 +14,33 @@ const Product = () => {
     
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-  const onSubmit = async (data) => {
-    // try {
-    //   await axios.post('http://localhost:5000/submit-form', data);
-    //   alert('Form submitted successfully');
-    //   reset();
-    // } catch (error) {
-    //   console.error('Error submitting form:', error);
-    //   alert('An error occurred while submitting the form');
-    // }
-    console.log(data)
+  const onSubmit = async(data) => {
+  
+  
+ 
+
+
+    fetch(`http://localhost:5000/product`,{
+
+       method: 'POST',
+       headers : {
+        'content-type': 'application/json'
+       },
+      body : JSON.stringify(data)
+  })
+    .then(res=>res.json())
+    .then(data => console.log(data))
+
+
+    await Swal.fire({
+      icon: 'success',
+      title: 'Success!',
+      text: 'Your submission was successful! Thank you.',
+    });
+
+
+    window.location.reload();
+
   };
   
    

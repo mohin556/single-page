@@ -15,7 +15,11 @@ function App() {
     <div className="App">
      <Router>
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route
+          path="/"
+          exact component={Home} 
+          
+          />
        
         <Route path="/product" component={Product} />
     
