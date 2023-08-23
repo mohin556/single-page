@@ -1,0 +1,12 @@
+#sectorSelect{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: black;
+}
+optgroup option {
+    display: block;
+    padding: 5px;
+  }

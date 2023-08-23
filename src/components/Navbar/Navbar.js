@@ -24,6 +24,7 @@ const Navbars = () => {
               navbarScroll
             >
               <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/">Home</Nav.Link>
+              <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/from">From</Nav.Link>
               <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/contact">Contact Us</Nav.Link>
               <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/product">Product</Nav.Link>
               {/* <NavDropdown className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  title="Services" id="navbarScrollingDropdown">

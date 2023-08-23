@@ -10,17 +10,22 @@ const Cards = ({product}) => {
     const {name,nothing,price,email} = product;
     
     return (
-        <section className='p-6' >
-              <Card style={{ width: '18rem'  }}>
-      <Card.Img variant="top"  src={nothing} />
+        <section className='  ' >
+            <div className='' >
+            <Card className="my-3 custom-card ">
       <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>
-     <h4>{email}</h4>
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Row>
+          <Col xs={12} md={4}>
+            <img src={nothing} alt="" className="img-fluid" />
+          </Col>
+          <Col xs={12} md={8}>
+            <Card.Title>{name}</Card.Title>
+            <Card.Text>{email}</Card.Text>
+          </Col>
+        </Row>
       </Card.Body>
     </Card>
+            </div>
         </section>
     );
 };

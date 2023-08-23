@@ -1,0 +1,19 @@
+.custom-card {
+    /* Set a minimum height to prevent the card from becoming too small */
+    height: 100px; /* Adjust this value as needed */
+    border: 2px solid red;
+    background-color: blue;
+  }
+  
+  /* Apply responsive styles using media queries */
+  @media (max-width: 576px) { /* Extra small devices */
+    .custom-card {
+      min-height: 150px; /* Adjust this value as needed for smaller screens */
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) { /* Small devices */
+    .custom-card {
+      min-height: 200px; /* Adjust this value as needed for small screens */
+    }
+  }
