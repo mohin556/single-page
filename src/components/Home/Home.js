@@ -27,11 +27,7 @@ const Home = () => {
                     <div className='home  '>
           
                      <h1>Well Come to Home component</h1>
-                     {/* <div className='grid md:grid-cols-2' >
-                        {
-                            products.map(product => <Cards key={product._id} product={product}   />)
-                        }
-                     </div> */}
+                 
                             <div className="d-flex justify-content-center p-4" >
                             <Container>
                                 <Row>

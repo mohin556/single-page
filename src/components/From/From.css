@@ -10,3 +10,7 @@ optgroup option {
     display: block;
     padding: 5px;
   }
+  .form-btn{
+    background-color: #1DC68C;
+    font-weight: bold;
+  }
