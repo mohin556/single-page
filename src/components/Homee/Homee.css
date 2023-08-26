@@ -1,0 +1,41 @@
+/* .home-main{
+   height: 100vh;
+   width: 100%;
+}
+.home-container{
+    background-color: whitesmoke;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+     margin-top: 20px;
+   
+
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: border-box;
+
+}
+.home{
+    background-color: rgb(255, 0, 0);
+} */
+
+.home-main{
+    background-color: white;
+    height: 100vh;
+}
+  
+  .home-container {
+    width: 85%;
+    margin: 0 auto; 
+  height: 100vh;
+    text-align: center;
+    overflow: auto;
+    background-color: whitesmoke;
+    margin-top: 30px;
+    padding: 20px; /* Adding padding for better visual appearance */
+  border-radius: 8px; /* Adding rounded corners to the border */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding box-shadow for card-like effect */
+   
+  }

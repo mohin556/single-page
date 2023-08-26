@@ -5,11 +5,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbars from './components/Navbar/Navbar';
 
 import Footer from './components/Footer/Footer';
-import Home from './components/Home/Home';
+import Home from './components/Homee/Homee';
 import Contact from './components/Contact/Contact';
 import Product from './components/Product/Product';
 import Login from './components/Login/Login';
-import From from './components/From/From';
+import From from './components/Home/Home';
 
 function App() {
   return (
