@@ -1,0 +1,35 @@
+#sectorSelect{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: black;
+}
+optgroup option {
+    display: block;
+    padding: 5px;
+  }
+  .form-btn{
+    background-color: #1DC68C;
+    font-weight: bold;
+  }
+
+  .home-main{
+    background-color: white;
+    height: 100vh;
+}
+  
+  .home-container {
+    width: 85%;
+    margin: 0 auto; 
+  height: 100vh;
+    text-align: center;
+    overflow: auto;
+    background-color: whitesmoke;
+    margin-top: 30px;
+    padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+   
+  }

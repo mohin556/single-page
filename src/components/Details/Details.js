@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table';
+
 
 import './Details.css'
 import Swal from 'sweetalert2';
@@ -17,8 +17,8 @@ const Details = () => {
    },[])
 
    const handleDelete = (_id) => {
-    // Make an API call to delete the detail by its _id
-          console.log(_id)
+  
+        
           Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -41,11 +41,11 @@ const Details = () => {
                   title: 'Deleted!',
                   text: 'Your option has been deleted.',
                   icon: 'success',
-                  timer: 2000, // Display for 2 seconds
+                  timer: 2000, 
                   showConfirmButton: false
                 });
     
-                // Delay the page reload by 2 seconds to allow the user to see the message
+               
                 setTimeout(() => {
                   window.location.reload();
                 }, 2000);
@@ -61,21 +61,32 @@ const Details = () => {
   return (
  
     <div className="mt-4" >
-      <h4>Check Details</h4>
+      <h4>Your Details</h4>
+    
+
       <Table responsive striped bordered hover size="sm">
         <thead>
           <tr>
             <th>Name</th>
             <th>Sector Title & Selected option </th>
-            <th>Action</th>
+      
+            <th> Agree &  Action </th>
           </tr>
         </thead>
         <tbody>
-          {details.map(({ _id, name, selectedSectorObject,selectedSector }, index) => (
+          {details.map(({ _id, name, selectedSectorObject,selectedSector,
+agreeToTerms }, index) => (
             <tr key={_id}>
               <td>{name}</td>
               <td>{selectedSectorObject.title} & {selectedSector} </td>
+        
               <td>
+                {agreeToTerms ? (
+            <span className="text-success">✓ Agreed</span>
+          ) : (
+            <span className="text-danger">✗ Not Agreed</span>
+          )}
+
                 <Button variant="danger" onClick={() => handleDelete(_id)}>
                   Remove
                 </Button>
@@ -84,6 +95,8 @@ const Details = () => {
           ))}
         </tbody>
       </Table>
+
+
     </div>
   );
 };

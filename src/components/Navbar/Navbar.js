@@ -24,19 +24,9 @@ const Navbars = () => {
               navbarScroll
             >
               <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/">Home</Nav.Link>
-              <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/from">From</Nav.Link>
+              <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/extra">Extra</Nav.Link>
               {/* <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/contact">Contact Us</Nav.Link> */}
               <Nav.Link className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  href="/product">Product</Nav.Link>
-              {/* <NavDropdown className='me-3' style={{ fontSize: '18px', fontWeight: 'bolder' }}  title="Services" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3"> Tracking </NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                 Power System
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  About Us
-                </NavDropdown.Item>
-              </NavDropdown> */}
               
             </Nav>
             <Form className="d-flex">

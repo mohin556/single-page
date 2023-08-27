@@ -1,4 +1,4 @@
-.container {
+/* .container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -8,7 +8,7 @@
     background-color: #f9f9f9;
   }
   
-  /* Styles for form elements */
+
   label {
     display: block;
     margin-top: 10px;
@@ -50,4 +50,18 @@
   button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
-  }
+  } */
+  /* Extra.css */
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.centered-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
-import './Home.css';
+import './From.css';
 import { useState } from 'react';
 import Navbars from '../Navbar/Navbar';
 import Swal from 'sweetalert2';
@@ -12,6 +12,7 @@ const From = () => {
   const [sectorsList, setSectorsList] = useState([]);
   const [agreeToTerms, setAgreeToTerms] = useState(false);
   const [showOtherOptions, setShowOtherOptions] = useState(true);
+  const [names, setName] = useState('');
 
   useEffect(() => {
     fetch(`http://localhost:5000/sectors`)
@@ -34,6 +35,10 @@ const From = () => {
 const handleSaveClick = () => {
   if (!selectedSector) {
     alert('Please select a sector before saving.');
+    return;
+  }
+  if (!names) {
+    alert('Please enter your name before saving.');
     return;
   }
 
@@ -93,7 +98,12 @@ const handleSaveClick = () => {
              <section className='home-container mb-4 ' >
       <div>
         <h6>Please enter your name and pick the Sectors you are currently involved in.</h6>
-        <Form.Control type="text" placeholder="Name" required />
+        <Form.Control
+         type="text"
+          placeholder="Name"
+          value={names}
+          onChange={(event) => setName(event.target.value)}
+           required />
       </div>
       <div>
         <label htmlFor="sectorSelect"> <h5>Select a Sector:</h5>  </label>
@@ -134,14 +144,8 @@ const handleSaveClick = () => {
          <div>
          <Details/>
          </div>
-
-
     </section>
              
-    
- 
-    
-
          </div>
   );
 };
